@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en" class="no-js">
+<head>
+    <meta name="utf-8"/>
+    <meta name="description" content="javascript calculator" />
+    <meta name="keywords" content="calculator,javascript" />
+    <link type="text/css" rel="stylesheet" href="stylesheets/javascript-calculator.css" />
+    <script type="text/javascript" src="js/calculator.javascript.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.js"></script>  
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.0-beta.1/jquery-ui.js"></script> 
+    <script src="https://code.jquery.com/ui/1.12.0-rc.1/jquery-ui.min.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div id="header">
+        <h1>Calculator</h1>
+    </div>
+        
+    <div id="calculator">
+
+	    <div class="top">
+		        <button class="clear">C</button>
+		        <div class="input"></div>
+                <div class="result"></div>
+	    </div>
+	
+        <!--每按一數字按鍵，旁邊會出現放大版的數字-->
+	  <div class="keys" >
+
+		    <button class="num" data-value="7">7</button>
+		    <button class="num"data-value="8">8</button>
+		    <button class="num"data-value="9">9</button>
+		    <button data-ops="divided by" class="operator">/</button>
+		    <button class="num"data-value="4">4</button>
+		    <button class="num"data-value="5">5</button>
+		    <button class="num"data-value="6">6</button>
+		    <button data-ops="times" class="operator">x</button>
+		    <button class="num"data-value="1">1</button>
+		    <button class="num"data-value="2">2</button>
+		    <button class="num"data-value="3">3</button>
+		    <button data-ops="minus" class="operator">-</button>
+		    <button class="num"data-value="0">0</button>
+		    <button class="num"data-value=".">.</button>
+		    <button id="equals" class="equals" data-result="">=</button>
+		    <button data-ops="plus" class="operator">+</button>
+	    </div>
+   </div>
+
+</body>
+</html>
