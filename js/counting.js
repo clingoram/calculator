@@ -12,9 +12,7 @@ for (var i = 0; i < keys.length; i++) {
         if (btnVal == 'C') {
             input.innerHTML = '';
             decimalAdded = false;
-        }
-
-        else if (btnVal == '=') {
+        } else if (btnVal == '=') {
             var equation = inputVal;
             var lastChar = equation[equation.length - 1];
 
@@ -27,9 +25,7 @@ for (var i = 0; i < keys.length; i++) {
                 input.innerHTML = eval(equation);
 
             decimalAdded = false;
-        }
-
-        else if (operators.indexOf(btnVal) > -1) {
+        } else if (operators.indexOf(btnVal) > -1) {
 
             var lastChar = inputVal[inputVal.length - 1];
 
@@ -44,16 +40,12 @@ for (var i = 0; i < keys.length; i++) {
             }
 
             decimalAdded = false;
-        }
-
-        else if (btnVal == '.') {
+        } else if (btnVal == '.') {
             if (!decimalAdded) {
                 input.innerHTML += btnVal;
                 decimalAdded = true;
             }
-        }
-
-        else {
+        } else {
             input.innerHTML += btnVal;
         }
 
